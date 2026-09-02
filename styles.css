@@ -126,7 +126,7 @@ nav.main-nav ul {
 .hero-overlay-secondary {
     position: absolute; /* Positions the overlay on top of the image */
     top: 50%;
-    left: 10%;
+    left: 14%;
     transform: translateY(-50%); /* Centers the overlay */
     text-align: left; /* Ensures text starts from the left */
     max-width: 600px; /* Gives long text room to extend before wrapping */
@@ -298,6 +298,130 @@ nav.main-nav ul {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: block;
+}
+
+/* ----------------------------------Secondary Sections--------------------------------------- */
+
+/* 1. Container layout */
+.secondary-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Text gets 3 parts, Image gets 1 part */
+    gap: 40px; 
+    align-items: center;
+    max-width: 1200px;             /* Constrains the total width of the section */
+    margin: 0 auto;                /* Centers the bounded grid on the page */
+    padding: 60px 20px;
+}
+
+.secondary-text{
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(0, 0, 0, 0.3);
+    padding-right: 20px;
+}
+
+/* 4. Secondary Image parent */
+.secondary-image {
+    max-width: 300px;     /* Forces the image container to stop growing */
+    justify-self: end;    /* Pushes the container to the right side of the grid cell */
+    width: 100%;
+}
+
+/* 5. Secondary Image Child */
+.secondary-image img {
+    width: 100%;          /* Fills 100% of the 300px container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* ----------------------------------Sidebar--------------------------------------- */
+
+/* 1. Sidebar Layout */
+.sidebar-widget {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* 2. Sidebar logo */
+.sidebar-brand img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* 3. Logo Fade-In Effect */
+.fade-in-logo {
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 4. Sidebar Office Name */
+.sidebar-brand h3 {
+  font-size: 1.5rem;
+  color: #4a7bb0; /* Practice brown color */
+  margin-bottom: 25px;
+}
+
+
+/* 5. Rounded Pill Button Containers */
+.pill-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* 6. Rounded Pill Buttons */
+.pill-btn {
+  background-color: #4a7bb0; /* Pill background color */
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 50px; /* Fully rounded capsule/pill shape */
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  
+  /* Keeps zooming text strictly inside the pill boundaries */
+  overflow: hidden; 
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* 7. Hover effect for Rounded Pill Buttons */
+.pill-btn:hover {
+  background-color: #432917;
+  transform: translateY(-2px); /* Subtle rise effect on hover */
+}
+
+/* 8. Text Zoom-In Effect inside Pills */
+.zoom-text {
+  display: inline-block;
+  animation: zoomIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.3); /* Starts small inside the button */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);   /* Zooms up and stops smoothly */
+  }
 }
 
 /* ----------------------------------Footer-------------------------------------- */
