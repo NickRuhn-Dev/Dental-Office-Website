@@ -1,0 +1,35 @@
+New Patient: 
+Nav Bar - none
+
+Secondary Links - About Don Ruhnke Dental, Meet Dr. Don Ruhnke, Before & After Dental Gallery, Veterans Affairs Dental Benefits, Dental Insurance Verification
+
+About Us:
+Nav Bar - Meet Dr. Don Ruhnke, Office Tour, Before & After Gallery, "Comfort, Safety, & Security", Veterans Affairs Dental Benefits
+
+Secondary Links - About Don Ruhnke Dental, Dental Office Tour, Meet Dr. Don Ruhnke, Before & After Dental Gallery, "Comfort, Safety, & Security", Veterans Affairs Dental Benefits, Dental Insurance Verification
+
+General Dentistry: 
+Nav Bar - Preventative Dentistry Services, Teeth Cleaning, Cavity Fillings, Crowns and Bridges, Root Canals, Emergency Dentistry, Dentures, TMD and TMJ Treatment, Child Dentistry Services
+
+Secondary Links - General Dentistry Services, Preventative Dentistry Services, Teeth Cleaning, Cavity Fillings, Dental Crowns and Bridges, Root Canal Treatment, Emergency Dentistry Services, Denture Services, TMD and TMJ Treatment, Child Dentistry Services
+
+Cosmetic Dentistry: 
+Nav Bar - Teeth Whitening, Orthodontic Treatment, Veneers
+
+Secondary Links - Teeth Whitening Services, Orthodontic Treatment, Dental Veneers, Dental Implants
+
+Dental Implants:
+Nav Bar - None
+
+Secondary Links - None 
+
+Contact Us:
+Nav Bar - Schedule An Appointment, Insurance Verification
+
+Secondary Links - About Don Ruhnke Dental, Meet Dr. Don Ruhnke, Before & After Dental Gallery, Dental Client Testimonials, Veterans Affairs Dental Benefits, Dental Insurance Verification
+
+
+Notes: 
+-Before and After gallery use pictures from stock photos or just take the ones from Alamo Ranch Dental (they took them from somewhere else)
+-No implant crowns under Dental Crowns and bridges page
+-Under Insurance Verification Page, also add that we offer layaway plans

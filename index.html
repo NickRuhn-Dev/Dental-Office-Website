@@ -25,18 +25,64 @@
 <main>
 
 <!-- Navigation Bar-->
- <nav class="main-nav"> 
+<nav class="main-nav"> 
     <ul>
         <li><a href="index.html">Home</a></li>
+        
+        <!-- New Patient (No Dropdown) -->
         <li><a href="new-patient.html">New Patient</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="general-dentistry.html">General Dentistry</a></li>
-        <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+        
+        <!-- About Us Dropdown -->
+        <li class="dropdown">
+            <a href="about-us.html" class="dropbtn">About Us</a>
+            <ul class="dropdown-menu">
+                <li><a href="about-us/meet-dr-ruhnke.html">Meet Dr. Don Ruhnke</a></li>
+                <li><a href="about-us/office-tour.html">Office Tour</a></li>
+                <li><a href="about-us/before-after.html">Before & After Gallery</a></li>
+                <li><a href="about-us/comfort-safety.html">Comfort, Safety, & Security</a></li>
+                <li><a href="about-us/va-benefits.html">Veterans Affairs Dental Benefits</a></li>
+            </ul>
+        </li>
+
+        <!-- General Dentistry Dropdown -->
+        <li class="dropdown">
+            <a href="general-dentistry.html" class="dropbtn">General Dentistry</a>
+            <ul class="dropdown-menu">
+                <li><a href="general-dentistry/preventative.html">Preventative Dentistry Services</a></li>
+                <li><a href="general-dentistry/teeth-cleaning.html">Teeth Cleaning</a></li>
+                <li><a href="general-dentistry/fillings.html">Cavity Fillings</a></li>
+                <li><a href="general-dentistry/crowns-bridges.html">Crowns and Bridges</a></li>
+                <li><a href="general-dentistry/root-canals.html">Root Canals</a></li>
+                <li><a href="general-dentistry/emergency.html">Emergency Dentistry</a></li>
+                <li><a href="general-dentistry/dentures.html">Dentures</a></li>
+                <li><a href="general-dentistry/tmj-tmd.html">TMD and TMJ Treatment</a></li>
+                <li><a href="general-dentistry/child-dentistry.html">Child Dentistry Services</a></li>
+            </ul>
+        </li>
+
+        <!-- Cosmetic Dentistry Dropdown -->
+        <li class="dropdown">
+            <a href="cosmetic-dentistry.html" class="dropbtn">Cosmetic Dentistry</a>
+            <ul class="dropdown-menu">
+                <li><a href="cosmetic-dentistry/teeth-whitening.html">Teeth Whitening</a></li>
+                <li><a href="cosmetic-dentistry/orthodontics.html">Orthodontic Treatment</a></li>
+                <li><a href="cosmetic-dentistry/veneers.html">Veneers</a></li>
+            </ul>
+        </li>
+
+        <!-- Dental Implants (No Dropdown) -->
         <li><a href="dental-implants.html">Dental Implants</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
+
+        <!-- Contact Us Dropdown -->
+        <li class="dropdown">
+            <a href="contact-us.html" class="dropbtn">Contact Us</a>
+            <ul class="dropdown-menu">
+                <li><a href="contact-us/schedule-appointment.html">Schedule An Appointment</a></li>
+                <li><a href="contact-us/insurance-verification.html">Insurance Verification</a></li>
+            </ul>
+        </li>
     </ul>
- </nav>
+</nav>
 
  <!-- Hero Banner: Image with Practice Name & Company Statement -->
 <div class="hero-section">
@@ -70,8 +116,9 @@
             <p>We are proud to welcome new and returning patients to our Kingsville office! If you have been searching for a dedicated dental team that places your overall well-being, comfort, and smile at the very center of your care, you have found your dental home right here with Dr. Don Ruhnke.
 
             Our goal is simple: to provide high-quality, modern dentistry in a warm, friendly environment where you always feel like family. We offer a comprehensive range of services—from routine preventative cleanings to advanced restorations—designed to keep your teeth healthy and your smile radiant.</p>
+
             <h3>Why choose our office?</h3>
-            <ul>
+            <ul class="welcome-highlights">
                 <li><strong>Respect for Your Time:</strong> We know your schedule is busy, which is why we prioritize prompt appointments and efficient care to complete your treatments in as few visits as possible.</li>
                 <li><strong>Your Comfort First:</strong> We understand that visiting the dentist can feel intimidating for some. We focus on gentle techniques, a relaxed atmosphere, and an empathetic approach to make every visit stress-free.</li>
                 <li><strong>Dedicated Doctor Time:</strong> Dr. Ruhnke takes the time to sit down with you, listen to your concerns, and answer every question so you can make confident decisions about your oral health.</li>
@@ -156,7 +203,7 @@
                 <li><strong>D.D.S</strong>- University of Texas Dental School (Top 25% of class)</li>
                 <li><strong>B.S. in Chemical Engineering</strong>- Texas A&I University (Magna Cum Laude)</li>
                 <li><strong>Honors</strong>- Tau Beta Pi Engineering Honor Society</li>
-                <li><strong>Experience</strong>- Proudly serving Kingsville for over 40 years</li>
+                <li><strong>Experience</strong>- Proudly serving Kingsville for over 30 years</li>
             </ul>
         </div>
 

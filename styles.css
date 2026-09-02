@@ -59,13 +59,61 @@ nav.main-nav {
 }
 
 /* 2. Make the navigation bar a horizontal list */
-nav.main-nav ul {
+nav.main-nav > ul {
     list-style: none;               /* Removes default list styling */
     display: flex;                  /* Displays list items in a row */
     justify-content: center;        /* Centers the navigation items */
     gap: 10px;                      /* Adds space between the navigation items */
     margin: 0;                      /* Removes default margin */
     padding: 0;                     /* Removes default padding */
+}
+
+/*--------------------------------Navigation Links--------------------------------------- */
+/* Anchor point for the sub-menu */
+.main-nav li.dropdown {
+  position: relative;
+}
+
+/* Base dropdown box */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 260px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  list-style: none; /* Strips bullets */
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  margin: 0;       /* Clears any inherited margins */
+  padding: 0;      /* Clears any inherited padding */
+}
+
+.dropdown-menu a {
+  color: #194e83; /* Dark Blue */
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+  white-space: nowrap; /* Prevents long link text from awkwardly breaking into 2 lines */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f4f1ea;
+  color: #6a8d53; /* Brand Accent Green */
+}
+
+/* Reveal dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* ---------------------------------------Hero Banner------------------------------------- */
@@ -192,7 +240,7 @@ nav.main-nav ul {
 /* 8. Welcome Highlights List Items Styling */
 .welcome-highlights li {
     margin-bottom: 10px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* 9. Welcome text positioning */
@@ -264,6 +312,7 @@ nav.main-nav ul {
     max-width: 1200px;             /* Constrains the total width of the section */
     margin: 0 auto;                /* Centers the bounded grid on the page */
     padding: 60px 20px;
+    line-height: 1.6; /* Standard readable spacing for body text */
 }
 
 /* 2. Quote styling */
@@ -302,32 +351,35 @@ nav.main-nav ul {
 
 /* ----------------------------------Secondary Sections--------------------------------------- */
 
+
 /* 1. Container layout */
 .secondary-container {
     display: grid;
     grid-template-columns: 3fr 1fr; /* Text gets 3 parts, Image gets 1 part */
     gap: 40px; 
-    align-items: center;
+    align-items: start;
     max-width: 1200px;             /* Constrains the total width of the section */
-    margin: 0 auto;                /* Centers the bounded grid on the page */
-    padding: 60px 20px;
+    margin: 50px auto;                /* Centers the bounded grid on the page */
+    padding: 0px 20px;
 }
 
+/* 2. Secondary text styling */
 .secondary-text{
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: rgba(0, 0, 0, 0.3);
     padding-right: 20px;
+    line-height: 1.6; /* Standard readable spacing for body text */
 }
 
-/* 4. Secondary Image parent */
+/* 3. Secondary Image parent */
 .secondary-image {
     max-width: 300px;     /* Forces the image container to stop growing */
     justify-self: end;    /* Pushes the container to the right side of the grid cell */
     width: 100%;
 }
 
-/* 5. Secondary Image Child */
+/* 4. Secondary Image Child */
 .secondary-image img {
     width: 100%;          /* Fills 100% of the 300px container */
     height: auto;
@@ -336,7 +388,7 @@ nav.main-nav ul {
     display: block;
 }
 
-/* ----------------------------------Sidebar--------------------------------------- */
+/* ----------------------------------Sidebar Logo & Buttons--------------------------------------- */
 
 /* 1. Sidebar Layout */
 .sidebar-widget {
@@ -403,7 +455,7 @@ nav.main-nav ul {
 
 /* 7. Hover effect for Rounded Pill Buttons */
 .pill-btn:hover {
-  background-color: #432917;
+  background-color: #85d39f;
   transform: translateY(-2px); /* Subtle rise effect on hover */
 }
 
@@ -422,6 +474,53 @@ nav.main-nav ul {
     opacity: 1;
     transform: scale(1);   /* Zooms up and stops smoothly */
   }
+}
+
+/* --------------------------------Sidebar Secondary Links--------------------------------------- */
+
+/* Sidebar Horizontal Divider */
+.sidebar-divider {
+  width: 80%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3); /* Subtle black line */
+  margin: 25px 0 20px 0;
+}
+
+/* Secondary Links Styling */
+.sidebar-links {
+  text-align: left;
+  width: 100%;
+  max-width: 240px;
+}
+
+.sidebar-links h4 {
+  font-size: 1.1rem;
+  color: #4a7bb0;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.sidebar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 8px;
+}
+
+.sidebar-links a {
+  color: #6a8d53; /* Accent green color */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+}
+
+.sidebar-links a:hover {
+  color: #5c3a21; /* Shifts to brown on hover */
+  padding-left: 4px; /* Subtle slide effect */
 }
 
 /* ----------------------------------Footer-------------------------------------- */
