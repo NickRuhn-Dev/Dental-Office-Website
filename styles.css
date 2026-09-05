@@ -301,10 +301,10 @@ nav.main-nav > ul {
     font-size: 0.95rem;
 }
 
-/* ----------------------------------Meet The Doctor Section--------------------------------------- */
+/* ----------------------------------Our Doctor--------------------------------------- */
 
 /* 1. Container layout */
-.doctor-container {
+.office-container {
     display: grid;
     grid-template-columns: 3fr 1fr; /* Text gets 3 parts, Image gets 1 part */
     gap: 40px; 
@@ -314,6 +314,24 @@ nav.main-nav > ul {
     padding: 60px 20px;
     line-height: 1.6; /* Standard readable spacing for body text */
 }
+
+/* 2. Office Image parent */
+.office-image {
+    max-width: 300px;     /* Forces the image container to stop growing */
+    justify-self: end;    /* Pushes the container to the right side of the grid cell */
+    width: 100%;
+}
+
+/* 3. Office Image Child */
+.office-image img {
+    width: 100%;          /* Fills 100% of the 300px container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* ----------------------------------Meet the Doctor Quote Styling--------------------------------------- */
 
 /* 2. Quote styling */
 .doctor-quote {
@@ -333,15 +351,31 @@ nav.main-nav > ul {
     color: #4a7bb0;
 }
 
+/* ----------------------------------Secondary Sections with images--------------------------------------- */
+
+/* 1. Container layout */
+.secondary-container-three-col {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Adjust proportions for Text, Image, and Widget/Logo */
+    gap: 30px; 
+    align-items: start;
+    max-width: 1200px;             /* Constrains the total width of the section */
+    margin: 30px auto;                /* Centers the bounded grid on the page */
+    padding: 0px 20px;
+    line-height: 1.6; /* Standard readable spacing for body text */
+}
+
+
 /* 4. Doctor Image parent */
-.doctor-image {
+.secondary-image-three-col {
+    float: right;          /* Ensures the image container floats to the right of the text */
+    margin: 0 0 20px 25px; /* Adds space between the image and text */
     max-width: 300px;     /* Forces the image container to stop growing */
-    justify-self: end;    /* Pushes the container to the right side of the grid cell */
     width: 100%;
 }
 
 /* 5. Doctor Image Child */
-.doctor-image img {
+.secondary-image-three-col img {
     width: 100%;          /* Fills 100% of the 300px container */
     height: auto;
     border-radius: 8px;
@@ -365,27 +399,8 @@ nav.main-nav > ul {
 
 /* 2. Secondary text styling */
 .secondary-text{
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgba(0, 0, 0, 0.3);
     padding-right: 20px;
     line-height: 1.6; /* Standard readable spacing for body text */
-}
-
-/* 3. Secondary Image parent */
-.secondary-image {
-    max-width: 300px;     /* Forces the image container to stop growing */
-    justify-self: end;    /* Pushes the container to the right side of the grid cell */
-    width: 100%;
-}
-
-/* 4. Secondary Image Child */
-.secondary-image img {
-    width: 100%;          /* Fills 100% of the 300px container */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
 }
 
 /* ----------------------------------Sidebar Logo & Buttons--------------------------------------- */
@@ -398,6 +413,9 @@ nav.main-nav > ul {
   align-items: center;
   text-align: center;
   padding-left: 20px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0, 0, 0.3);
 }
 
 /* 2. Sidebar logo */
