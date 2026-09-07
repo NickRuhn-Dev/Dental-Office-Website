@@ -301,7 +301,7 @@ nav.main-nav > ul {
     font-size: 0.95rem;
 }
 
-/* ----------------------------------Our Doctor--------------------------------------- */
+/* ----------------------------------Our Office--------------------------------------- */
 
 /* 1. Container layout */
 .office-container {
@@ -331,7 +331,7 @@ nav.main-nav > ul {
     display: block;
 }
 
-/* ----------------------------------Meet the Doctor Quote Styling--------------------------------------- */
+/* ----------------------------------Meet Dr. Ruhnke Quote Styling--------------------------------------- */
 
 /* 2. Quote styling */
 .doctor-quote {
@@ -362,7 +362,6 @@ nav.main-nav > ul {
     max-width: 1200px;             /* Constrains the total width of the section */
     margin: 30px auto;                /* Centers the bounded grid on the page */
     padding: 0px 20px;
-    line-height: 1.6; /* Standard readable spacing for body text */
 }
 
 
@@ -383,6 +382,11 @@ nav.main-nav > ul {
     display: block;
 }
 
+.secondary-text-three-col {
+    padding-right: 20px;
+    line-height: 1.6; /* Standard readable spacing for body text */
+}
+
 /* ----------------------------------Secondary Sections--------------------------------------- */
 
 
@@ -390,10 +394,10 @@ nav.main-nav > ul {
 .secondary-container {
     display: grid;
     grid-template-columns: 3fr 1fr; /* Text gets 3 parts, Image gets 1 part */
-    gap: 40px; 
+    gap: 30px; 
     align-items: start;
     max-width: 1200px;             /* Constrains the total width of the section */
-    margin: 50px auto;                /* Centers the bounded grid on the page */
+    margin: 30px auto;                /* Centers the bounded grid on the page */
     padding: 0px 20px;
 }
 
@@ -465,6 +469,7 @@ nav.main-nav > ul {
   text-decoration: none;
   font-weight: 600;
   display: block;
+  text-align: center;
   
   /* Keeps zooming text strictly inside the pill boundaries */
   overflow: hidden; 
