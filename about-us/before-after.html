@@ -15,9 +15,17 @@
  <header>
     <div class="header-container">
         <a href="3615928521" class="hero-btn call-btn">
-            Call Don Ruhnke's Office Today! (361) 592-8521
+            Call Our Office Today! (361) 592-8521
         </a>
         <img src="../images/DonRuhnkeOfficeLogo.png" alt="Don B. Ruhnke DDS Logo" class="logo">
+
+        <!-- Action Pill Button -->
+  <div class="pill-buttons">
+    <a href="../new-patient.html" class="pill-btn">
+      <span class="zoom-text">Online Forms</span>
+    </a>
+    </div>
+
     </div>
 </header>
 
@@ -106,24 +114,93 @@
             <h2>Our Philosophy & Mission</h2>
 
             <p>
-                At the office of Don Ruhnke, DDS, our mission is to provide every patient with the opportunity to achieve and maintain optimal oral health so they can eat, speak, and smile with total confidence. Whether that means helping you preserve your natural teeth for as long as possible or restoring your smile with modern tooth replacement options, we tailor our approach directly to your unique goals.
-
-                We prioritize prevention and early detection to protect your long-term health. Dental care is a lifelong journey, and our team is dedicated to supporting you and your family at every age and stage of life.
+                Explore our before and after dental gallery to see real, transformation-focused results from our actual patients. Experience the noticeable enhancements Dr. Don B. Ruhnke, DDS has achieved for smiles throughout the Kingsville community.
             </p>
 
-            <h3>Advanced Technology & Patient-Centered Care</h3>
             <p>
-                To deliver the highest standard of care, we equip our practice with proven dental technologies and modern techniques. We believe exceptional dentistry requires staying at the forefront of the field, continuously enhancing our capabilities as new advancements emerge.
-
-                Above all, we believe in empowering our patients. We will always present clear, viable treatment options and take the time to answer your questions—ensuring you feel fully informed and confident in every decision you make for your smile.
+                From custom denture services and porcelain veneers to comprehensive restorations and professional teeth whitening in Texas, our office provides complete care under one roof. With our comprehensive dentistry in Kingsville, we address the root cause of oral health issues rather than just treating temporary symptoms. Whether your personalized treatment plan spans a few weeks or several months, our team is committed to supporting you every step of the way. Every concern regarding your smile—big or small—receives meticulous care and individual attention.
             </p>
 
-            <h3>Take the Next Step Toward a Healthy Smile</h3>
             <p>
-                Call <a href="3615928521" class="hero-btn call-btn">(361) 592-8521</a> today to schedule an appointment with Dr. Ruhnke and our welcoming team!
+                When you want lasting results, you partner with an experienced, patient-focused team. At the practice of Don B. Ruhnke, DDS, your health, comfort, and confidence always come first. Call us today at<a href="3615928521" class="hero-btn call-btn">(361) 592-8521</a> to begin your journey toward your best smile possible!
             </p>
+
+            <hr> <!-- dividing line -->
+
+        <!-- Before/After Gallery Set 1 -->
+         <div class="gallery-set">
+        <div class="gallery-image">
+            <img src="../images/before-after/crowns-1.jpeg" alt="Crowns Before Image">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/crowns-2.jpeg" alt="Crowns After Image">
+        </div>
+        </div>
+
+        <hr> <!-- dividing line -->
+
+        <!-- Before/After Gallery Set 2 -->
+         <div class="gallery-set">
+        <div class="gallery-image">
+            <img src="../images/before-after/second-crowns-1.jpeg" alt="Second Crowns Before Image">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/second-crowns-2.jpeg" alt="Second Crowns After Image">
+        </div>
+        </div>
+
+        <hr> <!-- dividing line -->
+
+        <!-- Before/After Gallery Set 3 -->
+         <div class="gallery-set">
+        <div class="gallery-image">
+            <img src="../images/before-after/third-crowns-1.jpeg" alt="Third Crowns Before Image 1">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/third-crowns-2.jpeg" alt="Third Crowns Before Image 2">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/third-crowns-3.jpeg" alt="Third Crowns After Image 1">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/third-crowns-4.jpeg" alt="Third Crowns After Image 2">
+        </div>
+        </div>
+
+        <hr> <!-- dividing line -->
+
+        <!-- Before/After Gallery Set 4 -->
+         <div class="gallery-set">
+        <div class="gallery-image">
+            <img src="../images/before-after/fourth-crowns-1.jpeg" alt="Fourth Crowns Before Image">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/fourth-crowns-2.jpeg" alt="Fourth Crowns After Image">
+        </div>
+        </div>
+
+        <hr> <!-- dividing line -->
+
+        <!-- Before/After Gallery Set 5 -->
+         <div class="gallery-set">
+        <div class="gallery-image">
+            <img src="../images/before-after/implant-1.jpeg" alt="Implant Before Image">
+        </div>
+
+        <div class="gallery-image">
+            <img src="../images/before-after/implant-2.jpeg" alt="Implant After Image">
+        </div>
+        </div>
+        <!-- End of Before/After Gallery -->
 
         </div>
+        <!-- End of text column -->
 
 <!-- Right Column Widget -->
 <div class="sidebar-widget">
@@ -229,6 +306,34 @@
 
 </div>
 </footer>
+
+<!-- Image Modal / Lightbox (Used for Office Tour Images)-->
+<div id="image-modal" class="modal">
+  <span class="close-btn">&times; Back</span>
+  <img class="modal-content" id="modal-img" alt="Enlarged view">
+</div>
+
+<!-- JavaScript for Image Modal -->
+<script>
+  // Get modal elements
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Add click listener to all gallery images
+  document.querySelectorAll(".gallery-image img").forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Close modal when clicking the 'Back' button or dark overlay
+  closeBtn.addEventListener("click", () => modal.style.display = "none");
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
 
 </body>
 </html> 
