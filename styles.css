@@ -28,7 +28,7 @@ header {
 /* 2. The Flexbox engine that creates the side-by-side layout */
 header .header-container {
     display: grid;                         /* Uses CSS Grid for layout */
-    grid-template-columns: 1fr auto 1fr;  /* Creates three columns: left, center, right */
+    grid-template-columns: 1fr 2fr 1fr;  /* Creates three columns: left, center, right */
     align-items: center;              /* Center vertically */
     max-width: 1200px;                /* Limits the width of the header content */
     margin: 0 auto;                   /* Centers the header content */
