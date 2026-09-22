@@ -105,33 +105,54 @@
 </div>
 <!-- End of Secondary Hero Banner -->
 
-<!-- About Us Section -->
+<!-- Cavity Filling Section -->
 <section class="secondary-section">
     <div class="secondary-container">
 
         <!-- Left Column text -->
         <div class="secondary-text">
-            <h2>Our Philosophy & Mission</h2>
+            <h2>Composite Resin Cavity Fillings</h2>
 
-            <p>
-                At the office of Don Ruhnke, DDS, our mission is to provide every patient with the opportunity to achieve and maintain optimal oral health so they can eat, speak, and smile with total confidence. Whether that means helping you preserve your natural teeth for as long as possible or restoring your smile with modern tooth replacement options, we tailor our approach directly to your unique goals.
-
-                We prioritize prevention and early detection to protect your long-term health. Dental care is a lifelong journey, and our team is dedicated to supporting you and your family at every age and stage of life.
-            </p>
-
-            <h3>Advanced Technology & Patient-Centered Care</h3>
-            <p>
-                To deliver the highest standard of care, we equip our practice with proven dental technologies and modern techniques. We believe exceptional dentistry requires staying at the forefront of the field, continuously enhancing our capabilities as new advancements emerge.
-
-                Above all, we believe in empowering our patients. We will always present clear, viable treatment options and take the time to answer your questions—ensuring you feel fully informed and confident in every decision you make for your smile.
-            </p>
-
-            <h3>Take the Next Step Toward a Healthy Smile</h3>
-            <p>
-                Call <a href="3615928521" class="hero-btn call-btn">(361) 592-8521</a> today to schedule an appointment with Dr. Ruhnke and our welcoming team!
-            </p>
-
+        <div class="gallery-set">
+        <!-- Floating Office Tour Image 1 -->
+        <div class="gallery-image">
+            <img src="../images/cavity-filling/cavity-1.jpeg" alt="Old filling removed">
+            <p>Crack in tooth visible after removal of old filling</p>
         </div>
+
+        <!-- Floating Office Tour Image 2 -->
+        <div class="gallery-image">
+            <img src="../images/cavity-filling/cavity-2.jpeg" alt="Root Canal Treatment">
+            <p>Crack visible inside of tooth during root canal treatment</p>
+        </div>
+
+        <!-- Floating Office Tour Image 3 -->
+        <div class="gallery-image">
+            <img src="../images/cavity-filling/cavity-3.jpeg" alt="New Filling">
+            <p>New filling put in place</p>
+        </div>
+        </div>
+
+            <hr> <!-- dividing line -->
+
+            <h2>Tooth Restorations & Fillings</h2>
+            <p>
+                Dental fillings are used to restore a tooth when a portion of it is missing or affected by decay. Dr. Ruhnke removes the decayed or damaged area and replaces it with a durable filling material right here in Kingsville, TX. Beyond decay, fillings can repair teeth that have chipped or broken—such as from biting on hard food—or correct areas affected by wear and erosion. Fillings are most effective when decay is small to medium-sized, leaving ample healthy tooth structure to support the restoration. If decay is extensive or the tooth is cracked, a crown (or "cap") may be recommended, while deeper decay reaching the nerve may require pulp capping or root canal therapy.
+            </p>
+            <p>
+                There are several filling materials available, with tooth-colored composite resin being the most popular for matching your natural smile. Dental fillings are typically completed in a single convenient appointment. With proper oral hygiene, daily flossing, balanced eating habits, and regular preventative care, composite fillings can last for years before needing routine replacement.
+            </p>
+
+            <h2>Cosmetic Dental Bonding</h2>
+            <p>
+                Dental bonding utilizes shade-matched adhesive composite resin and a special curing light to seamlessly blend restorations with your natural teeth. Bonding is often used for cosmetic enhancements, such as closing gaps, repairing small chips, or reshaping teeth to improve the symmetry and appearance of your smile.
+            </p>
+            <p>
+                Call <a href="3615928521" class="hero-btn call-btn">(361) 592-8521</a> today to schedule your filling or bonding appointment with Dr. Don B. Ruhnke, DDS in Kingsville, TX!
+            </p>
+
+    </div>
+        <!-- End of text column-->
 
 <!-- Right Column Widget -->
 <div class="sidebar-widget">
@@ -237,6 +258,34 @@
 
 </div>
 </footer>
+
+<!-- Image Modal / Lightbox (Used for Office Tour Images)-->
+<div id="image-modal" class="modal">
+  <span class="close-btn">&times; Back</span>
+  <img class="modal-content" id="modal-img" alt="Enlarged view">
+</div>
+
+<!-- JavaScript for Image Modal -->
+<script>
+  // Get modal elements
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Add click listener to all gallery images
+  document.querySelectorAll(".gallery-image img").forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Close modal when clicking the 'Back' button or dark overlay
+  closeBtn.addEventListener("click", () => modal.style.display = "none");
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
 
 </body>
 </html> 

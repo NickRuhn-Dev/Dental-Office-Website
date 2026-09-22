@@ -486,6 +486,25 @@ hr {
     line-height: 1.6; /* Standard readable spacing for body text */
 }
 
+/* ----------------------------------VA Benefits Image--------------------------------------- */
+
+/* 4. Doctor Image parent */
+.secondary-image-va-benefits {
+    float: right;          /* Ensures the image container floats to the right of the text */
+    margin: 0 0 20px 25px; /* Adds space between the image and text */
+    max-width: 500px;     /* Forces the image container to stop growing */
+    width: 100%;
+}
+
+/* 5. Doctor Image Child */
+.secondary-image-va-benefits img {
+    width: 100%;          /* Fills 100% of the 300px container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
 /* ----------------------------------Sidebar Logo & Buttons--------------------------------------- */
 
 /* 1. Sidebar Layout */
