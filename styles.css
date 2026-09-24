@@ -718,3 +718,27 @@ footer .footer-column li {
 footer .footer-column a {
     color: #000000;  /* Black text for links */
 }
+
+/* --------------------------------Mobile Compatibilty-------------------------- */
+
+/* Mobile Styles (Screens 768px wide and under) */
+@media (max-width: 768px) {
+    
+    /* 1. Recenter the hero overlay text box */
+    .hero-overlay {
+        left: 50% !important;   /* Centers the overlay on mobile */
+        width: 90%;             /* Allows the box to expand safely */
+        padding: 15px;
+    }
+
+    /* 2. Scale hero image height down for phone screens */
+    .hero-image {
+        height: 350px;          /* Prevents the hero image from taking up the entire mobile screen */
+    }
+
+    /* 3. Stack gallery pairs vertically */
+    .gallery-set {
+        flex-direction: column; /* Stacks before/after images on top of each other */
+        align-items: center;
+    }
+}
