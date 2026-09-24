@@ -719,26 +719,118 @@ footer .footer-column a {
     color: #000000;  /* Black text for links */
 }
 
-/* --------------------------------Mobile Compatibilty-------------------------- */
+/* --------------------------------Mobile Compatibility-------------------------- */
 
-/* Mobile Styles (Screens 768px wide and under) */
 @media (max-width: 768px) {
-    
-    /* 1. Recenter the hero overlay text box */
+
+    /* 1. Viewport & General Spacing */
+    body {
+        overflow-x: hidden; /* Prevents awkward horizontal scrolling */
+    }
+
+    /* 2. Header Mobile Stack */
+    header .header-container {
+        grid-template-columns: 1fr; /* Stacks phone link, logo, and items vertically */
+        text-align: center;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    header .header-container .call-btn {
+        justify-self: center; /* Centers call button on mobile header */
+    }
+
+    header .logo {
+        grid-column: 1; /* Reset grid positioning to single column */
+        margin: 0 auto;
+    }
+
+    /* 3. Navigation Bar Mobile Touch Friendly */
+    nav.main-nav > ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .dropdown-menu {
+        position: static; /* Allows submenus to drop naturally inline on mobile */
+        width: 100%;
+        box-shadow: none;
+    }
+
+    /* 4. Hero Banner Adjustment */
+    .hero-image {
+        height: 350px;
+    }
+
     .hero-overlay {
-        left: 50% !important;   /* Centers the overlay on mobile */
-        width: 90%;             /* Allows the box to expand safely */
+        left: 50% !important;   /* Centers overlay box on mobile screen */
+        width: 90%;
         padding: 15px;
     }
 
-    /* 2. Scale hero image height down for phone screens */
-    .hero-image {
-        height: 350px;          /* Prevents the hero image from taking up the entire mobile screen */
+    .hero-overlay-secondary {
+        left: 5% !important;
+        transform: translateY(-50%);
+        max-width: 90%;
     }
 
-    /* 3. Stack gallery pairs vertically */
+    /* 5. Welcome Section Mobile Stack */
+    .welcome-container {
+        grid-template-columns: 1fr; /* Stacks image above text */
+        gap: 20px;
+    }
+
+    .welcome-text {
+        justify-self: start;
+    }
+
+    /* 6. Services Grid Mobile Stack */
+    .services-container {
+        grid-template-columns: 1fr; /* Stacks service cards 1-per-row */
+        gap: 20px;
+    }
+
+    /* 7. Secondary / Office / Sidebar Grids Mobile Stack */
+    .office-container,
+    .secondary-container,
+    .secondary-container-three-col {
+        grid-template-columns: 1fr; /* Stacks main text and sidebar content vertically */
+        gap: 25px;
+        padding: 20px 15px;
+    }
+
+    .secondary-image-three-col,
+    .secondary-image-va-benefits,
+    .office-image {
+        float: none; /* Disables right-floats that push text out of bounds on mobile */
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    .sidebar-widget {
+        padding-left: 0;
+        border-left: none; /* Removes desktop vertical divider line */
+        border-top: 1px solid rgba(0, 0, 0, 0.2); /* Replaces with horizontal top divider */
+        padding-top: 25px;
+    }
+
+    /* 8. Gallery Stacking */
     .gallery-set {
-        flex-direction: column; /* Stacks before/after images on top of each other */
+        flex-direction: column; /* Stacks before/after image pairs vertically */
         align-items: center;
+    }
+
+    .gallery-image {
+        float: none;
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    /* 9. Footer Stacking */
+    footer .footer-container {
+        flex-direction: column; /* Stacks footer columns vertically */
+        text-align: center;
+        gap: 25px;
     }
 }
