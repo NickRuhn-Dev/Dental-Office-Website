@@ -143,6 +143,15 @@ nav.main-nav > ul {
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%); /* Centers the overlay */
+
+    /* Translucent Background Box */
+    background-color: rgba(133, 211, 159, 0.65); /* Pastel Green box with 65% opacity */
+    color: #000000;                        /* Sets header and slogan text to white */
+    padding: 25px 35px;                    /* Space inside the box around text */
+    border-radius: 8px;                    /* Softens corners */
+    text-align: center;                    /* Centers text and button inside box */
+    max-width: 85%;                        /* Keeps box responsive on smaller screens */
+    box-sizing: border-box;
 }
 
 /* 4. Hero overlay & call button syles */
@@ -178,6 +187,26 @@ nav.main-nav > ul {
     transform: translateY(-50%); /* Centers the overlay */
     text-align: left; /* Ensures text starts from the left */
     max-width: 600px; /* Gives long text room to extend before wrapping */
+}
+
+.hero-overlay-secondary h2 {
+    color: white;
+}
+
+.hero-overlay-secondary p {
+    color: #2600fd;
+}
+
+/* 1. Default state: normal text color, no underline */
+a.hero-link,
+a.hero-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* 2. Hover state: adds the underline when hovered */
+a.hero-link:hover {
+    text-decoration: underline;
 }
 
 /* ---------------------------------Welcome Section---------------------------------------- */
