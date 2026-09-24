@@ -834,7 +834,12 @@ footer .footer-column a {
         gap: 25px;
     }
 
+    /* Center standalone pill buttons on mobile screens only */
     .pill-btn {
-        justify-content: center;
+        width: fit-content;
+        min-width: 220px;
+        margin: 15px auto !important; /* Centers block-level pill buttons horizontally */
+        text-align: center;
     }
+
 }
