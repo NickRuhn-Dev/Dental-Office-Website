@@ -176,6 +176,7 @@ nav.main-nav > ul {
     display: block; /*Removes the small gap below the image */
     height: 325px;
     object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    object-position: 50% 40%; /* Moves the focal point down (X-axis %, Y-axis %) */
     grid-column: 1; 
 }
 
@@ -817,14 +818,18 @@ footer .footer-column a {
 
     /* 8. Gallery Stacking */
     .gallery-set {
-        flex-direction: column; /* Stacks before/after image pairs vertically */
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;             /* Allows images to wrap neatly to the next row */
+        justify-content: center;     /* Centers images side-by-side */
+        gap: 20px;                   /* Even spacing between images (no float clearing bugs) */
+        margin-bottom: 30px;
     }
 
     .gallery-image {
         float: none;
-        margin: 15px auto;
-        max-width: 100%;
+        margin: 0;                   /* Gap property handles spacing now */
+        max-width: 350px;
+        width: 100%;
     }
 
     /* 9. Footer Stacking */
